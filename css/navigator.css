@@ -1,0 +1,21 @@
+.dNavbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  z-index: 6;
+}
+
+@media ( max-width: 800px ) {
+  .dSp {
+    /* -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; */
+    position: fixed;
+    top:42px;
+    left:0px;
+    width:100%;
+    background:#fff;
+  }
+}

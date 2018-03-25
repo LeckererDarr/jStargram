@@ -1,0 +1,195 @@
+.body{
+  color:#565656;
+}
+
+.row_card{
+
+}
+
+.wrap_card{
+  /* background-color:grey; */
+  padding:10px;
+}
+
+.wrap_card .inner_card{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color:white;
+  box-shadow:0 2px 4px rgba(0,0,0,0.1), 0 -1px 1px rgba(0,0,0,0.05);
+  transition:box-shadow ease 100ms;
+  border-radius:.3em;
+  height:auto;
+}
+
+.no_padding{
+  padding:0;
+}
+
+@keyframes btn_hover {
+    from {opacity:1;}
+    to {opacity:0;}
+}
+
+.fade_out:hover{
+  /* http://nalrarydesigner.tistory.com/entry/%EC%8A%A4%ED%83%80%EC%9D%BC%EC%8B%9C%ED%8A%B8%EB%A1%9C-%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98-%ED%9A%A8%EA%B3%BC%EB%A5%BC-%EB%82%BC-%EC%88%98-%EC%9E%88%EC%96%B4%EC%9A%94-CSS-Animation */
+  animation:btn_hover 0.3s forwards;
+}
+
+.follow_btn{
+  color:inherit;
+  padding:1px 8px 1px 8px;
+  border-radius: .3em;
+  cursor: pointer;
+  float:right;
+  margin-top:5px;
+}
+
+.steem_btn{
+  color: white;
+  padding:1px 8px 1px 8px;
+  border-radius: .3em;
+  cursor: pointer;
+  background-color: #ff8080;
+  border: 1px solid #ff8080;
+}
+
+.follow_btn:hover{
+  color:inherit;
+}
+
+
+
+/* 카드 내용 card contents */
+.inner_card .wrap_profile{
+  padding:8px;
+}
+
+
+
+.wrap_profile .profile_img{
+  width:40px;
+  height:40px;
+  border-radius: 50%;
+  border:2px solid white;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.wrap_profile .profile_name{
+
+}
+
+.inner_card .wrap_head{
+  /* background-color: #00000099; */
+  padding:8px;
+}
+
+/* 카드 버튼 */
+.inner_card .wrap_btn{
+  float:right;
+}
+
+/* 카드 태그 */
+.inner_card .wrap_tag{
+  position:absolute;
+  text-align: right;
+  right:0;
+  bottom:0;
+  padding:5px;
+}
+
+.inner_card .tag{
+  border-radius: .3em;
+  padding:3px;
+  background-color: #00000099;
+  color: #9eebff;
+  font-size: 12px;
+}
+
+/* 메인 이미지 */
+.inner_card .wrap_img {
+	position: relative;
+	width: 100%;
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 60.26%;
+}
+
+.wrap_img .img{
+  /* https://hyeonseok.com/soojung/css/2012/08/22/712.html */
+  position: absolute;
+  top: 0;
+  left: 0;
+
+
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  /* -webkit-border-image: url() 0 round;
+  -o-border-image: url() 0 round;
+  border-image: url() 0 round; */
+}
+
+/* 카드 제목 */
+.inner_card .sub{
+  padding-top:5px;
+  padding-bottom:5px;
+  font-size:23px;
+  max-height:75px;
+
+  overflow: hidden;
+  /* http://webee.tistory.com/entry/%EC%8A%A4%ED%83%80%EC%9D%BC%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%97%AC%EB%9F%AC%EB%AC%B8%EC%9E%A5-%EC%A4%84%EC%9D%B4%EA%B8%B0-CSS-ellipsis-multiline */
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* 라인수 */
+  -webkit-box-orient: vertical;
+  text-overflow:ellipsis;
+
+  /* http://htglss.tistory.com/31 */
+  word-break:break-all;
+
+  /* display:table-cell;
+  vertical-align: middle; */
+}
+
+/* 카드 본문 */
+.inner_card .cont{
+  max-height:95px;
+  padding-top:5px;
+  padding-bottom:5px;
+  font-size:14px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* 라인수 */
+  -webkit-box-orient: vertical;
+  text-overflow:ellipsis;
+  word-break:break-all;
+  /* display:table-cell;
+  vertical-align: middle; */
+}
+/* .wrap_img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+	width: 100%;
+	height: 100%;
+} */
+
+.inner_card .wrap_foot{
+  border-top:1px solid #ccc;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height:100%;
+  font-size:14px;
+}
+
+.wrap_foot .more{
+  float:left;
+}
+
+.wrap_foot .wrap_vote{
+  float:right;
+}
